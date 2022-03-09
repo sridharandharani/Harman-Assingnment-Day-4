@@ -2,7 +2,7 @@
 import sqlite3
 folder = sqlite3.connect("hostipal.db")
 getdname = input("Enter the doctor name :")
-output = folder.execute(" SELECT * FROM HOSPITALDOCTOR WHERE DOCTORNAME = "+getdname)
+output = folder.execute(" SELECT * FROM HOSPITALDOCTOR WHERE DOCTORNAME = '"+getdname+"'")
 for i in output:
     print("doctor name :",i[0])
     print("doctor qualification :",i[1])

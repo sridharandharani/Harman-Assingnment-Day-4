@@ -10,7 +10,7 @@ get_pemailid = input("Enter the doctor email id :")
 
 
 folder.execute("UPDATE HOSPITALDOCTOR SET \
- DOCTORNAME='"+get_dname+"',DOCTORQUALIFICATION='"+get_dqualification+"',DOCTORADDRESS='"+get_daddress+"',PATIENTEMAILID ='"+get_pemailid+"' \
+ DOCTORNAME='"+get_dname+"',DOCTORQUALIFICATION='"+get_dqualification+"',DOCTORADDRESS='"+get_daddress+"',DOCTOREMAILID ='"+get_pemailid+"' \
  WHERE DOCTORPHNO = "+get_dphno)
 folder.commit()
 print("updated sucessfully")
